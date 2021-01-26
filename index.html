@@ -11,25 +11,36 @@
       .presidents td {font-weight: 400;}
       .presidents .komuniste {background-color: #c74d4d; color: yellow;}
       .presidents .spolecne {background-color: #4a4abe; color: yellow;}
-      .presidents .roky {background-color: #D7CCC8; font-weight: 900;}
+      .presidents .roky {background-color: #D7CCC8; font-weight: 900; text-align: center;}
       .presidents .cr {background-color: #90CAF9;}
       .presidents .sr {background-color: #F8BBD0;}
       table {border-collapse: collapse;}
       thead {border-bottom: black solid 3px;}
       tfoot {border-top: black solid 3px;}
-      .bez{color: gray;}
+      .presidents.bez{color: gray;}
     </style>
   </head>
   <body>
     <table class="presidents">
-      <caption></caption>
+      <caption>
+        <colgroup class="roky">
+          <col span="2">
+        </colgroup>
+        <colgroup>
+          <col class="cr">
+          <col class="sr">
+        </colgroup>
+        <colgroup>
+          <col>
+        </colgroup>
+      </caption>
 
       <thead>
         <tr>
-          <th class="roky">Od</th>
-          <th class="roky">Do</th>
-          <th class="cr">Česko</th>
-          <th class="sr">Slovensko</th>
+          <th>Od</th>
+          <th>Do</th>
+          <th>Česko</th>
+          <th>Slovensko</th>
           <th>Poznámka</th>
         </tr>
       </thead>
@@ -58,59 +69,59 @@
       </tbody>
       <tbody>
         <tr>
-          <td class="roky">1993</td>
-          <td class="roky">1998</td>
-          <td class="cr" rowspan="3">Václav Havel</td>
-          <td class="sr">Michal Kováč</td>
+          <td>1993</td>
+          <td>1998</td>
+          <td rowspan="3">Václav Havel</td>
+          <td>Michal Kováč</td>
           <td></td>
         </tr>
         <tr>
-          <td class="roky">1998</td>
-          <td class="roky">1999</td>
-          <td class="sr bez">bez prezidenta</td>
+          <td>1998</td>
+          <td>1999</td>
+          <td class="bez">bez prezidenta</td>
           <td class="bez">Na Slovensku v této době byli pověřei pretidentskými pravomocemi tehdejší premiéři</td>
         </tr>
         <tr>
-          <td class="roky">1999</td>
-          <td class="roky">2003</td>
-          <td rowspan="2" class="sr">Rudolf Schuster</td>
+          <td>1999</td>
+          <td>2003</td>
+          <td rowspan="2">Rudolf Schuster</td>
           <td></td>
         </tr>
         <tr>
-          <td class="roky">2003</td>
-          <td class="roky">2004</td>
-          <td rowspan="2" class="cr">Václav Klaus</td>
+          <td>2003</td>
+          <td>2004</td>
+          <td rowspan="2">Václav Klaus</td>
           <td></td>
         </tr>
         <tr>
-          <td class="roky">2004</td>
-          <td class="roky">2013</td>
-          <td rowspan="2" class="sr">Ivan Gašparovič</td>
+          <td>2004</td>
+          <td>2013</td>
+          <td rowspan="2">Ivan Gašparovič</td>
           <td></td>
         </tr>
         <tr>
-          <td class="roky">2013</td>
-          <td class="roky">2014</td>
-          <td rowspan="3" class="cr">Miloš Zeman</td>
+          <td>2013</td>
+          <td>2014</td>
+          <td rowspan="3">Miloš Zeman</td>
           <td></td>
         </tr>
         <tr>
-          <td class="roky">2014</td>
-          <td class="roky">2019</td>
-          <td class="sr">Andrej Kiska</td>
+          <td>2014</td>
+          <td>2019</td>
+          <td >Andrej Kiska</td>
           <td></td>
         </tr>
         <tr>
-          <td class="roky">2019</td>
-          <td class="roky">dosud</td>
-          <td class="sr">Zuzana Čaputová</td>
+          <td>2019</td>
+          <td>dosud</td>
+          <td>Zuzana Čaputová</td>
           <td></td>
         </tr>
       </tbody>
       <tfoot>
-        <td colspan="2" class="roky">Počet</td>
-        <td class="cr">2+3</td>
-        <td class="sr">2+5</td>
+        <td colspan="2">Počet</td>
+        <td >2+3</td>
+        <td >2+5</td>
         <td></td>
       </tfoot>
     </table>
