@@ -11,9 +11,13 @@
       .presidents td {font-weight: 400;}
       .presidents .komuniste {background-color: #c74d4d; color: yellow;}
       .presidents .spolecne {background-color: #4a4abe; color: yellow;}
-      .presidents .roky {background-color: #D7CCC8;}
+      .presidents .roky {background-color: #D7CCC8; font-weight: 900;}
       .presidents .cr {background-color: #90CAF9;}
       .presidents .sr {background-color: #F8BBD0;}
+      table {border-collapse: collapse;}
+      thead {border-bottom: black solid 3px;}
+      tfoot {border-top: black solid 3px;}
+      .bez{color: gray;}
     </style>
   </head>
   <body>
@@ -63,8 +67,8 @@
         <tr>
           <td class="roky">1998</td>
           <td class="roky">1999</td>
-          <td class="sr">bez prezidenta</td>
-          <td>Na Slovensku v této době byli pověřei pretidentskými pravomocemi tehdejší premiéři</td>
+          <td class="sr bez">bez prezidenta</td>
+          <td class="bez">Na Slovensku v této době byli pověřei pretidentskými pravomocemi tehdejší premiéři</td>
         </tr>
         <tr>
           <td class="roky">1999</td>
@@ -93,9 +97,21 @@
         <tr>
           <td class="roky">2014</td>
           <td class="roky">2019</td>
+          <td class="sr">Andrej Kiska</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="roky">2019</td>
+          <td class="roky">dosud</td>
+          <td class="sr">Zuzana Čaputová</td>
+          <td></td>
         </tr>
       </tbody>
-
+      <tfoot>
+        <td colspan="2" class="roky">Počet</td>
+        <td class="cr">2+3</td>
+        <td class="sr">2+5</td>
+        <td></td>
       </tfoot>
     </table>
   </body>
